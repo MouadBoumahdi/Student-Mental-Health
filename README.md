@@ -84,14 +84,11 @@ pour tester une nouvelle observation.
 
 ## Captures d'écran
 
-Ces images sont conservées localement et exclues de Git selon la demande. Elles
-s'affichent dans ce README local, mais ne seront pas incluses dans un dépôt
-cloné ou sur GitHub.
+Les captures suivantes montrent l'interface Airflow et les deux vues Streamlit.
 
 ### Airflow
 
-![Interface Airflow](<img width="1985" height="1079" alt="screencapture-localhost-8080-home-2026-11-13-16_51_45" src="https://github.com/user-attachments/assets/dd42fccf-81e3-4881-bd56-93cc280db53b" />
-)
+![Interface Airflow](Airflowcapture.png)
 
 ### Streamlit — analyse du modèle
 
