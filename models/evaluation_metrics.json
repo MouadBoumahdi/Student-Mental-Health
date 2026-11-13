@@ -1,0 +1,29 @@
+{
+    "model_name": "Logistic Regression",
+    "accuracy": 0.755,
+    "precision": 0.7555,
+    "recall": 0.755,
+    "f1_score": 0.7552,
+    "classes": [
+        "High",
+        "Low",
+        "Medium"
+    ],
+    "confusion_matrix": [
+        [
+            110,
+            0,
+            26
+        ],
+        [
+            1,
+            108,
+            23
+        ],
+        [
+            25,
+            23,
+            84
+        ]
+    ]
+}
