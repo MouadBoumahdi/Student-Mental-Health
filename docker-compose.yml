@@ -1,0 +1,14 @@
+services:
+  airflow:
+    build: .
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/output_notebooks:/opt/airflow/output_notebooks
+      - ./data:/opt/airflow/data
+      - ./models:/opt/airflow/models
+      - ./notebooks:/opt/airflow/notebooks
