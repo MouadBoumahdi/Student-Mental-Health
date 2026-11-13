@@ -2,3 +2,6 @@ data/
 __pycache__/
 *.py[cod]
 airflow/output_notebooks/
+Airflowcapture.png
+streamlitecapture1.png
+streamlitecapture2.png
