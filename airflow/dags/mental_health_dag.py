@@ -27,7 +27,7 @@ with DAG(
     dag_id="mental_health_two_notebooks",
     default_args=default_args,
     description="EDA->PREPROCESSING",
-    schedule="* * * * *",
+    schedule=None,
     start_date=datetime(2026, 11, 1),
     catchup=False,
     max_active_runs=1,
