@@ -90,7 +90,8 @@ cloné ou sur GitHub.
 
 ### Airflow
 
-![Interface Airflow](Airflowcapture.png)
+![Interface Airflow](<img width="1985" height="1079" alt="screencapture-localhost-8080-home-2026-11-13-16_51_45" src="https://github.com/user-attachments/assets/dd42fccf-81e3-4881-bd56-93cc280db53b" />
+)
 
 ### Streamlit — analyse du modèle
 
