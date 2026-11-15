@@ -6,7 +6,6 @@ from airflow.operators.python import PythonOperator
 
 BASE_DIR = "/opt/airflow"
 NOTEBOOKS_DIR = os.path.join(BASE_DIR, "notebooks")
-OUTPUT_DIR = os.path.join(BASE_DIR, "output_notebooks")
 
 default_args = {
     "owner": "mouad",
@@ -15,10 +14,9 @@ default_args = {
 }
 
 def execute_notebook(notebook_name):
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
     pm.execute_notebook(
         input_path=os.path.join(NOTEBOOKS_DIR, notebook_name),
-        output_path=os.path.join(OUTPUT_DIR, f"out_{notebook_name}"),
+        output_path=None,
         cwd=NOTEBOOKS_DIR,
         kernel_name="python3",
     )
@@ -27,10 +25,9 @@ with DAG(
     dag_id="mental_health_two_notebooks",
     default_args=default_args,
     description="EDA->PREPROCESSING",
-    schedule=None,
+    schedule="* * * * *",
     start_date=datetime(2026, 11, 1),
     catchup=False,
-    max_active_runs=1,
 ) as dag:
 
     task_eda = PythonOperator(

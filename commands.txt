@@ -1,0 +1,3 @@
+python -m streamlit run app/app.py
+docker compose up --build
+docker compose exec airflow cat standalone_admin_password.txt
